@@ -1,6 +1,8 @@
+import 'package:boongboong_into_the_room/map/model/marker_model.dart';
 import 'package:boongboong_into_the_room/map/view/map_view.dart';
 import 'package:boongboong_into_the_room/user/provider/auth_manage.dart';
 import 'package:boongboong_into_the_room/user/view/sign_up_view.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -51,7 +53,9 @@ class LoginPage extends ConsumerWidget {
                   child: Text('회원가입'),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () async {
+
+                  },
                   child: Text('비밀번호 초기화'),
                 ),
               ],
